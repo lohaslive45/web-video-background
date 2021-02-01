@@ -1,0 +1,26 @@
+1. javascript 'click' 開啟 & 關閉 語法
+
+const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click',()=>{
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+
+---------------以下為css--------------------
+
+2.菜單 可設計成 點開後 畫面往左移 (距離右側一段距離
+
+.showcase.active{
+    right: 300px;   /*距離右側300px*/
+}
+
+
+3.圖片反轉顏色 若原黑則轉白
+
+filter: invert(1);  
+
+4.混和色板顏色
+
+mix-blend-mode: overlay;

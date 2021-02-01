@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="video0115.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="showcase"> 
+            <header>
+                <h2 class="logo">旅Travel</h2>
+                <div class="toggle"></div>
+            </header>
+
+            <!--插入 影片素材-->
+            <video src="media/video.mp4" muted loop autoplay></video>
+        
+            <!--<div class="overlay"></div>-->
+
+            <div class="text">
+                <h2>絕不停止Never Stop</h2>
+                <h3>Explore the World探索世界</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis odio saepe voluptatum repellendus, veniam accusantium numquam unde. Ab, modi repellendus!</p>
+                <a href="#">探索Explore</a>
+            </div>
+
+            <ul class="social">
+                <li><a href="#"><img src="media/fb.png" alt=""></a></li>
+                <li><a href="#"><img src="media/ig.png" alt=""></a></li>
+                <li><a href="#"><img src="media/twitter.png" alt=""></a></li>
+            </ul>
+        </section>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">首頁Home</a></li>
+                <li><a href="#">消息News</a></li>
+                <li><a href="#">景點Destination</a></li>
+                <li><a href="#">遊記Blog</a></li>
+                <li><a href="#">聯繫Contact</a></li>
+            </ul>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click',()=>{
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+
+        </script>
+    </body>
+</html>
